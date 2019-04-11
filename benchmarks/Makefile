@@ -18,6 +18,7 @@ instbasedir = $(UCB_VLSI_HOME)/install
 #--------------------------------------------------------------------
 
 bmarks = \
+	ddot \
 	vvadd \
 	csaxpy \
 	dgemv \
@@ -26,6 +27,7 @@ bmarks = \
 	imax \
 	spmv \
 	rsort \
+	vec-ddot \
 	vec-vvadd \
 	vec-csaxpy \
 	vec-dgemv \
