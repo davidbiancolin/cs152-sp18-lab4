@@ -4,7 +4,7 @@ bmark=$1
 one_point_threshold=$2
 two_point_threshold=$3
 make $bmark.riscv.out > make.out 2> make.err
-rc=$!
+rc=$?
 cat make.out
 
 # Default failing case
