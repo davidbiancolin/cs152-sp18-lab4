@@ -13,11 +13,11 @@ if [[ $rc -eq 0 ]]; then
         cycle_count=$(grep -oE 'cycles\s*=\s*[0-9]*' make.out | awk -n '{print $3}')
         instructions=$(grep -oE 'instructions\s*=\s*[0-9]*' make.out | awk -n '{print $3}')
 
-        score=0.5
+        score=1.0
         if [[ $cycle_count -lt $two_point_threshold ]]; then
-           score=2.0
+           score=3.0
         elif [[ $cycle_count -lt $one_point_threshold ]]; then
-           score=1.0
+           score=2.0
         fi
 
         result_template="
